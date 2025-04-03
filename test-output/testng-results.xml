@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T10:44:32 IST" name="Suite" finished-at="2025-03-25T10:45:19 IST" duration-ms="46939">
+  <suite started-at="2025-04-03T18:04:43 IST" name="Suite" finished-at="2025-04-03T18:08:37 IST" duration-ms="234500">
     <groups>
     </groups>
-    <test started-at="2025-03-25T10:44:32 IST" name="ChromeTest" finished-at="2025-03-25T10:45:19 IST" duration-ms="46939">
-      <class name="test.ChangepasswordTest">
-        <test-method is-config="true" signature="reportIniatialization()[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:44:32 IST" name="reportIniatialization" finished-at="2025-03-25T10:44:32 IST" duration-ms="263" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportIniatialization -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:44:32 IST" name="setup" finished-at="2025-03-25T10:44:32 IST" duration-ms="1" status="PASS">
+    <test started-at="2025-04-03T18:04:43 IST" name="ChromeTest" finished-at="2025-04-03T18:08:37 IST" duration-ms="234500">
+      <class name="test.SearchhotelTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:04:43 IST" name="setup" finished-at="2025-04-03T18:04:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:44:32 IST" name="testDetails" finished-at="2025-03-25T10:44:32 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:07:35 IST" name="testDetails" finished-at="2025-04-03T18:07:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:44:33 IST" name="browserlaunch" finished-at="2025-03-25T10:44:41 IST" duration-ms="8256" status="PASS">
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:07:35 IST" name="browserlaunch" finished-at="2025-04-03T18:07:43 IST" duration-ms="7758" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,16 +31,268 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="changepasswordvalid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:44:41 IST" name="changepasswordvalid" data-provider="excelRead" finished-at="2025-03-25T10:45:02 IST" duration-ms="21049" status="FAIL">
+        <test-method signature="searchHoteltest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:07:43 IST" name="searchHoteltest" data-provider="excelRead" finished-at="2025-04-03T18:08:04 IST" duration-ms="21083" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[aswinrajaV]]>
               </value>
             </param>
             <param index="1">
               <value>
                 <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Prarthana]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[G]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Thanjavur,TAmilNadu,India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#location"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f399af607d9b4bbfbeb7f39beda503e0, findElement {value=location, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62471}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62471/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f399af607d9b4bbfbeb7f39beda503e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#location"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f399af607d9b4bbfbeb7f39beda503e0, findElement {value=location, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62471}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62471/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f399af607d9b4bbfbeb7f39beda503e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at page.Searchhotelpage.searchLocation(Searchhotelpage.java:48)
+at test.SearchhotelTest.searchHoteltest(SearchhotelTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHoteltest -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:08:04 IST" name="shuttingBrowser" finished-at="2025-04-03T18:08:06 IST" duration-ms="2147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:08:06 IST" name="browserlaunch" finished-at="2025-04-03T18:08:14 IST" duration-ms="7764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="searchHoteltestwithinvalid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:08:14 IST" name="searchHoteltestwithinvalid" data-provider="excelRead" finished-at="2025-04-03T18:08:35 IST" duration-ms="21581" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aswinrajaV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Prarthana]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[G]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Thanjavur,TAmilNadu,India]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#location"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c148b3d33b5aa5daadc29a2a63ce96e1, findElement {value=location, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62514/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c148b3d33b5aa5daadc29a2a63ce96e1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#location"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c148b3d33b5aa5daadc29a2a63ce96e1, findElement {value=location, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62514}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62514/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c148b3d33b5aa5daadc29a2a63ce96e1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at page.Searchhotelpage.searchLocation(Searchhotelpage.java:48)
+at test.SearchhotelTest.searchHoteltestwithinvalid(SearchhotelTest.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchHoteltestwithinvalid -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.SearchhotelTest@544fa968]" started-at="2025-04-03T18:08:35 IST" name="shuttingBrowser" finished-at="2025-04-03T18:08:37 IST" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+      </class> <!-- test.SearchhotelTest -->
+      <class name="test.ChangepasswordTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:04:43 IST" name="setup" finished-at="2025-04-03T18:04:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:05:08 IST" name="testDetails" finished-at="2025-04-03T18:05:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:05:08 IST" name="browserlaunch" finished-at="2025-04-03T18:05:19 IST" duration-ms="11184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="changepasswordvalid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:05:19 IST" name="changepasswordvalid" data-provider="excelRead" finished-at="2025-04-03T18:05:41 IST" duration-ms="21785" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
               </value>
             </param>
             <param index="2">
@@ -64,32 +312,32 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[testing]]>
+                <![CDATA[test]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":" //a[normalize-space()='Change Password']"}
-  (Session info: chrome=134.0.6998.118)
+  (Session info: chrome=134.0.6998.178)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e6b16637b6f16390863a03aa828f9d2b, findElement {using=xpath, value= //a[normalize-space()='Change Password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63354/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e6b16637b6f16390863a03aa828f9d2b]]>
+Command: [e6c41f8bda58815a5e53922621e7dd8b, findElement {value= //a[normalize-space()='Change Password'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62265}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62265/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6c41f8bda58815a5e53922621e7dd8b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":" //a[normalize-space()='Change Password']"}
-  (Session info: chrome=134.0.6998.118)
+  (Session info: chrome=134.0.6998.178)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e6b16637b6f16390863a03aa828f9d2b, findElement {using=xpath, value= //a[normalize-space()='Change Password']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63354/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e6b16637b6f16390863a03aa828f9d2b
+Command: [e6c41f8bda58815a5e53922621e7dd8b, findElement {value= //a[normalize-space()='Change Password'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\Pradeep\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62265}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62265/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e6c41f8bda58815a5e53922621e7dd8b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -107,7 +355,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at page.Searchhotelpage.changepassword(Searchhotelpage.java:119)
+at page.Searchhotelpage.changepassword(Searchhotelpage.java:118)
 at test.ChangepasswordTest.changepasswordvalid(ChangepasswordTest.java:31)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -141,11 +389,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changepasswordvalid -->
-        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:45:03 IST" name="shuttingBrowser" finished-at="2025-03-25T10:45:05 IST" duration-ms="2162" status="PASS">
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:05:41 IST" name="shuttingBrowser" finished-at="2025-04-03T18:05:43 IST" duration-ms="2142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shuttingBrowser -->
-        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:45:05 IST" name="browserlaunch" finished-at="2025-03-25T10:45:13 IST" duration-ms="7563" status="PASS">
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:05:43 IST" name="browserlaunch" finished-at="2025-04-03T18:05:53 IST" duration-ms="9285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,16 +409,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserlaunch -->
-        <test-method signature="changepasswordinvalid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:45:13 IST" name="changepasswordinvalid" data-provider="excelRead" finished-at="2025-03-25T10:45:17 IST" duration-ms="4078" status="PASS">
+        <test-method signature="changepasswordinvalid(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:05:53 IST" name="changepasswordinvalid" data-provider="excelRead" finished-at="2025-04-03T18:06:02 IST" duration-ms="8981" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[testing]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[testing]]>
               </value>
             </param>
             <param index="2">
@@ -190,22 +438,286 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </param>
             <param index="5">
               <value>
-                <![CDATA[testing]]>
+                <![CDATA[test]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changepasswordinvalid -->
-        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:45:17 IST" name="shuttingBrowser" finished-at="2025-03-25T10:45:19 IST" duration-ms="2145" status="PASS">
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.ChangepasswordTest@4c178a76]" started-at="2025-04-03T18:06:02 IST" name="shuttingBrowser" finished-at="2025-04-03T18:06:04 IST" duration-ms="2148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shuttingBrowser -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:test.ChangepasswordTest@2aceadd4]" started-at="2025-03-25T10:45:19 IST" name="closeReport" finished-at="2025-03-25T10:45:20 IST" duration-ms="373" status="PASS">
+      </class> <!-- test.ChangepasswordTest -->
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="reportIniatialization()[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:43 IST" name="reportIniatialization" finished-at="2025-04-03T18:04:43 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportIniatialization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:43 IST" name="setup" finished-at="2025-04-03T18:04:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:43 IST" name="testDetails" finished-at="2025-04-03T18:04:43 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:44 IST" name="browserlaunch" finished-at="2025-04-03T18:04:52 IST" duration-ms="8002" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Logintest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:52 IST" name="Logintest" data-provider="excelRead" finished-at="2025-04-03T18:04:55 IST" duration-ms="3575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aswinrajaV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logintest -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:55 IST" name="shuttingBrowser" finished-at="2025-04-03T18:04:58 IST" duration-ms="2135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:04:58 IST" name="browserlaunch" finished-at="2025-04-03T18:05:05 IST" duration-ms="7246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="InvalidLoginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:05:05 IST" name="InvalidLoginTest" data-provider="excelRead" finished-at="2025-04-03T18:05:06 IST" duration-ms="841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aswinrajaV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidLoginTest -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:05:06 IST" name="shuttingBrowser" finished-at="2025-04-03T18:05:08 IST" duration-ms="2182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:test.LoginTest@1ff4931d]" started-at="2025-04-03T18:08:37 IST" name="closeReport" finished-at="2025-04-03T18:08:38 IST" duration-ms="816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
-      </class> <!-- test.ChangepasswordTest -->
+      </class> <!-- test.LoginTest -->
+      <class name="test.BookitineraryTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:04:43 IST" name="setup" finished-at="2025-04-03T18:04:43 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:06:21 IST" name="testDetails" finished-at="2025-04-03T18:06:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:06:21 IST" name="browserlaunch" finished-at="2025-04-03T18:06:29 IST" duration-ms="7528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Bookeditenerary(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:06:29 IST" name="Bookeditenerary" data-provider="excelRead" finished-at="2025-04-03T18:06:56 IST" duration-ms="27548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aswinrajaV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bookeditenerary -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:06:56 IST" name="shuttingBrowser" finished-at="2025-04-03T18:06:59 IST" duration-ms="2194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:06:59 IST" name="browserlaunch" finished-at="2025-04-03T18:07:07 IST" duration-ms="8467" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Bookeditenerary1(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:07:07 IST" name="Bookeditenerary1" data-provider="excelRead" finished-at="2025-04-03T18:07:32 IST" duration-ms="25388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aswinrajaV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bookeditenerary1 -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.BookitineraryTest@3bd82cf5]" started-at="2025-04-03T18:07:32 IST" name="shuttingBrowser" finished-at="2025-04-03T18:07:35 IST" duration-ms="2113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+      </class> <!-- test.BookitineraryTest -->
+      <class name="test.LogoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.LogoutTest@fa4c865]" started-at="2025-04-03T18:04:43 IST" name="setup" finished-at="2025-04-03T18:04:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.LogoutTest@fa4c865]" started-at="2025-04-03T18:06:04 IST" name="testDetails" finished-at="2025-04-03T18:06:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="browserlaunch(java.lang.String,java.lang.String)[pri:0, instance:test.LogoutTest@fa4c865]" started-at="2025-04-03T18:06:04 IST" name="browserlaunch" finished-at="2025-04-03T18:06:11 IST" duration-ms="7484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://adactinhotelapp.com/HotelAppBuild2/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="Logout01(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.LogoutTest@fa4c865]" started-at="2025-04-03T18:06:11 IST" name="Logout01" data-provider="excelRead" finished-at="2025-04-03T18:06:19 IST" duration-ms="7681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aswinrajaV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout01 -->
+        <test-method is-config="true" signature="shuttingBrowser()[pri:0, instance:test.LogoutTest@fa4c865]" started-at="2025-04-03T18:06:19 IST" name="shuttingBrowser" finished-at="2025-04-03T18:06:21 IST" duration-ms="2101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shuttingBrowser -->
+      </class> <!-- test.LogoutTest -->
     </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->
 </testng-results>
