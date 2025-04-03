@@ -29,11 +29,9 @@ import base.ProjectSpecificationMethod;
  		Thread.sleep(4000);
  		Searchhotelpage objSearchhotelpage = new Searchhotelpage(driver);
  		objSearchhotelpage.Logout();
- 		//Logoutpage objLogoutSuccesspage = new Logoutpage(driver);
- 		//objLogoutSuccesspage.logout();
- 		//objloginpage.verifyloginpage();
  		
- 	}
  
  
  }
+ }
+ 	

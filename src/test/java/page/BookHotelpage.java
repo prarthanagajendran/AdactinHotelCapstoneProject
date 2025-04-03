@@ -19,7 +19,6 @@ import base.ProjectSpecificationMethod;
  	WebElement ContinuetoHotel2page;
  
  	public BookHotelpage(WebDriver driver) {
- 		// TODO Auto-generated constructor stub
  		this.driver = driver;
  		PageFactory.initElements(driver,this );
  	}

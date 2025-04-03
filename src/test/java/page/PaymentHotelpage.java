@@ -34,7 +34,6 @@ public class PaymentHotelpage extends ProjectSpecificationMethod{
 	@FindBy(id = "book_now")
 	WebElement Booknow;
 	public PaymentHotelpage(WebDriver driver) {
-		// TODO Auto-generated constructor stub
 		this.driver = driver;
 		PageFactory.initElements(driver,this );
 	}

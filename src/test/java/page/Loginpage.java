@@ -22,7 +22,6 @@ import base.ProjectSpecificationMethod;
  	
  	
  	public Loginpage(WebDriver driver) {
- 		// TODO Auto-generated constructor stub
  		this.driver = driver;
  		PageFactory.initElements(driver,this );
  	}
@@ -40,10 +39,7 @@ import base.ProjectSpecificationMethod;
  		Login.click();
  	    return new Searchhotelpage(driver);
  	}
- /*	public Signuppage Newuser() {
- 		Newuser.click();
- 		return new Signuppage(driver);
- 	}*/
+
  	public Loginpage verifycredentials() {
  		WebElement verifycreds = driver.findElement(By.xpath("//div[@class='auth_error']"));
  		

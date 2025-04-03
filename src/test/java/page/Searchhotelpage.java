@@ -40,7 +40,6 @@ import base.ProjectSpecificationMethod;
  	WebElement Location;
 
  	public Searchhotelpage(WebDriver driver) {
- 		// TODO Auto-generated constructor stub
  		this.driver = driver;
  		PageFactory.initElements(driver,this );
  	}

@@ -33,9 +33,7 @@ import base.ProjectSpecificationMethod;
  	@FindBy(xpath = "//input[@value='RXFN5N3DF7'] ")
  	WebElement id2;
  	
- 	/*@FindBy(xpath = "//input[@value='1317457'] ")
- 	WebElement ID3;*/
- 	
+ 
  	@FindBy(id = "order_id_1316806")
  	WebElement textorderid1;
  	
@@ -62,7 +60,6 @@ import base.ProjectSpecificationMethod;
  		 cancelselected.click();
  		 Alert alert = driver.switchTo().alert();
  		 alert.accept();
- 		// Assert.assertTrue(false, "1IL7L61Y1I");
  		 return this;
  	}
  	public Bookitinerarypage VerifySearchOrder() {
