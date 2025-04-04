@@ -16,6 +16,7 @@ import org.openqa.selenium.TakesScreenshot;
  import org.openqa.selenium.OutputType;
  import org.openqa.selenium.WebDriver;
  import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -33,7 +34,12 @@ import com.aventstack.extentreports.ExtentTest;
  	
 	
 	public void launchingBrowser(String browser , String url) {
- 		driver = new ChromeDriver();
+ 		//driver = new ChromeDriver();
+		if (browser.equalsIgnoreCase("Chrome")) {
+	        driver = new ChromeDriver();
+	    } else if (browser.equalsIgnoreCase("Firefox")) {
+	        driver = new FirefoxDriver();
+	    }
  		driver.get(url);
  		driver.manage().window().maximize();
  		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
